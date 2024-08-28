@@ -9,7 +9,115 @@
 </head>
 
 <body>
+    <nav>
+        <header>
+            <div class="logo-icon"></div>
+        </header>
+
+        <section class="nav-container">
+            <a href="#" class="nav-item">HOME</a>
+            <a href="#" class="nav-item">OUR PROFILE</a>
+            <a href="#" class="nav-item">ACHIVEMENT</a>
+            <a href="#" class="nav-item">MESSAGE US</a>
+        </section>
+
+    </nav>
+
+    <hr />
     
+    <main>
+        <article>
+            <header>
+                <h1>Welcome to Our Website</h1>
+            </header>
+
+            <p>lorem ipsum sit dolor</p>
+
+            <div class="banner-img img-1"></div>
+            <div class="banner-img img-2"></div>
+            <div class="banner-img img-3"></div>
+        </article>
+
+        <hr />
+
+        <section>
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+            <section class="profile-container">
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Software Engineer</h2>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Software Engineer</h2>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>Software Engineer</h2>
+                </div>
+
+            </section>
+        </section>
+
+        <hr />
+
+        <section>
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <style>
+                .radio-group {
+                    display: flex;
+                    gap: 10px; /* Adjust spacing between radio buttons */
+                }
+                .radio-group label {
+                    margin-right: 10px; /* Adjust spacing between label and radio button */
+                }
+            </style>
+
+            <form>
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                
+                <label for="lname">Tanggal Lahir:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                
+                <label for="fname">Jenis Kelamin:</label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">Laki-Laki
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">Perempuan
+                </label><br><br>
+                
+                <label for="pesan">Pesan:</label>
+                <input type="text" id="pesan" name="pesan"><br><br>
+                
+                <button type="button" onclick="formValidation()">Submit</button>
+            </form>
+            
+            <div>
+                Result: <span id="result"></span>
+            </div>
+
+            <button type="button" onclick="nextSlide(1)">Next Slide</button>
+        </section>
+
+    </main>
+
+    <hr />
+    
+    <footer class="footer-design">
+        <p> Copyright Nur Atmi Pertiwi 2024</p>
+    </footer>
+
+    <script src="js\script.js"></script>
 </body>
 
 </html>
